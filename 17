@@ -65,7 +65,7 @@ void loop()
       data = data >> 1;
       data = data | x;
       lcd.setCursor(6,0);
-      lcd.print("Spin");
+      lcd.print("Spin left");
     }
   }
 
@@ -78,10 +78,8 @@ void loop()
       Wire.endTransmission(); // stop transmitting
       delay(7); // wait for stepper speed
       lcd.setCursor(6,0);
-      lcd.print("Stop");
+      lcd.print("Spin right");
     }
   }
-
-
 
 }
